@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Just to make it look a bit nicer */
+    line-height: 1.6; /* Just to make it look a bit nicer */
+}
+
+/* Styling for main-row and inner rows */
+.main-row {
+    padding-top: 10px;
+    margin-bottom: 20px; /* Add space between main rows */
+}
+.inner-row1{
+    padding: 10px;
+}
+.inner-row1, .inner-row2 {
+    display: flex;
+    flex: 1; /* Each inner row will take up half the height of the main row */
+    margin-bottom: 10px; /* Add space between inner rows */
+}
+
+/* Styling for columns inside inner-row1 */
+.inner-row1 .left {
+    flex: 60%;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    margin-right: 10px;
+    padding: 20px;
+}
+.inner-row1 .right {
+    flex: 40%;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    padding: 10px;
+}
+
+/* Styling for 2x2 grid inside inner-row2 */
+.inner-row2 {
+    flex-wrap: wrap;
+}
+.grid-cell {
+    flex-basis: 50%; /* Takes up half the width of the parent */
+    flex-grow: 1; /* Allow it to grow and take up the available space */
+    padding: 10px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.inner-row2 img {
+    height: 325px
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+h4{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+ul {
+    padding-left: 10px;
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+p{
+    text-align: center;
+    padding: 5px;
+}
+.topimg {
+    /* Replace the URL below with your image URL */
+    background-size: cover;  /* Cover the viewport */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    width: 100%;  /* Make sure the div spans the full width */
+    height: 200px;  /* Span the full viewport height */
+    display: flex;  /* Use flex to center the text */
+    align-items: center;  /* Center the text vertically */
+    justify-content: center;  /* Center the text horizontally */
+}
+.prague{
+    background-image: url('../images/prague_one.webp');
+}
+.ok{
+    background-image: url('../images/safari_lodge.webp');
+}
+.paris{
+    background-image: url('../images/paris_daytime.jpg');
+}
+.zermatt{
+    background-image: url('../images/geneva_to_zermatt.jpeg');
+}
+.florence{
+    background-image: url('../images/florence.jpeg');
+}
+.dubai{
+    background-image: url('../images/dubai_dusk.jpg');
+}
+.location-text {
+    color: white;  /* Make the text white for better visibility */
+    font-size: 5rem;  /* Increase the font size */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);  /* Add a text shadow for better readability */
+}
+
+b{
+    font-weight: bold;
+}
