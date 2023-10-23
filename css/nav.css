@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+.current{
+    background-color: #4F5454;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
 .logo{
     display: inline-block;
     color: #f9f9f9;
@@ -35,6 +41,8 @@
     background-color: #36383F;
 }
 
+/* Hamburger icon animation used with rights from W3schools */
+/* https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/ */
 .hamb{
     cursor: pointer;
     float: right;
